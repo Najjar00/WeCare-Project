@@ -1,187 +1,247 @@
-.admin-layout{
-display:flex;
-min-height:100vh;
-width:100%;
-font-family:'Segoe UI',sans-serif;
-background:#f4f7f9;
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7f9;
 }
 
 /* Sidebar */
-
-.sidebar{
-width:240px;
-background:linear-gradient(180deg,#5BAF8F,#3A8D8B);
-color:white;
-padding:30px 20px;
-box-shadow:4px 0 20px rgba(0,0,0,0.08);
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #5BAF8F, #3A8D8B);
+  color: white;
+  padding: 30px 20px;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
 }
 
-.sidebar h2{
-margin-bottom:35px;
-font-size:22px;
-letter-spacing:1px;
+.sidebar h2 {
+  margin-bottom: 35px;
+  font-size: 22px;
+  letter-spacing: 1px;
 }
 
-.sidebar ul{
-list-style:none;
-padding:0;
+.sidebar ul {
+  list-style: none;
+  padding: 0;
 }
 
-.sidebar li{
-padding:12px 12px;
-border-radius:8px;
-cursor:pointer;
-margin-bottom:10px;
-transition:0.2s;
+.sidebar li {
+  padding: 12px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.2s;
 }
 
-.sidebar li:hover{
-background:rgba(255,255,255,0.2);
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
-.sidebar .active{
-background:rgba(255,255,255,0.3);
-font-weight:600;
+.sidebar .active {
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
 }
 
 /* Main */
-
-.admin-main{
-flex:1;
-padding:40px;
-background:#f4f7f9;
-width:100%;
+.admin-main {
+  flex: 1;
+  padding: 40px;
+  background: #f4f7f9;
+  width: 100%;
 }
 
-.admin-header{
-margin-bottom:10px;
+.admin-header {
+  margin-bottom: 10px;
 }
 
-.admin-header h1{
-margin-bottom:5px;
-font-size:28px;
+.admin-header h1 {
+  margin-bottom: 5px;
+  font-size: 28px;
 }
 
-.admin-header p{
-color:#777;
+.admin-header p {
+  color: #777;
 }
 
 /* Stats */
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-margin-top:25px;
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
 }
 
-.stat-card{
-background:white;
-padding:28px;
-border-radius:16px;
-box-shadow:0 10px 25px rgba(0,0,0,0.07);
-transition:0.2s;
+.stat-card {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.2s;
 }
 
-.stat-card:hover{
-transform:translateY(-4px);
+.stat-card:hover {
+  transform: translateY(-4px);
 }
 
-.stat-card h3{
-color:#3A8D8B;
-margin-bottom:12px;
-font-size:18px;
+.stat-card h3 {
+  color: #3A8D8B;
+  margin-bottom: 12px;
+  font-size: 18px;
 }
 
-.stat-card p{
-font-size:32px;
-font-weight:bold;
-color:#333;
+.stat-card p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Chart */
-
-.chart-card{
-background:white;
-padding:30px;
-margin-top:35px;
-border-radius:16px;
-box-shadow:0 10px 25px rgba(0,0,0,0.07);
+.chart-card {
+  background: white;
+  padding: 30px;
+  margin-top: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
-.chart-card h2{
-margin-bottom:10px;
+.chart-card h2 {
+  margin-bottom: 10px;
 }
 
-.chart{
-display:flex;
-gap:14px;
-align-items:flex-end;
-height:180px;
-margin-top:25px;
+.chart {
+  display: flex;
+  gap: 14px;
+  align-items: flex-end;
+  height: 180px;
+  margin-top: 25px;
 }
 
-.bar{
-width:35px;
-background:linear-gradient(180deg,#5BAF8F,#3A8D8B);
-border-radius:6px 6px 0 0;
-transition:0.2s;
+.bar {
+  width: 35px;
+  background: linear-gradient(180deg, #5BAF8F, #3A8D8B);
+  border-radius: 6px 6px 0 0;
+  transition: 0.2s;
 }
 
-.bar:hover{
-opacity:0.8;
+.bar:hover {
+  opacity: 0.8;
 }
 
 /* Tables */
-
-.tables{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
-margin-top:35px;
+.tables {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-top: 35px;
 }
 
-.table-card{
-background:white;
-padding:30px;
-border-radius:16px;
-box-shadow:0 10px 25px rgba(0,0,0,0.07);
+.table-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
 }
 
-.table-card h2{
-margin-bottom:10px;
+.table-card h2 {
+  margin-bottom: 10px;
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:15px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
 
-th{
-background:#f4f7f9;
-font-weight:600;
+th {
+  background: #f4f7f9;
+  font-weight: 600;
 }
 
-th,td{
-padding:12px;
-border-bottom:1px solid #eee;
-text-align:left;
-font-size:14px;
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 14px;
 }
 
-tr:hover{
-background:#fafafa;
+tr:hover {
+  background: #fafafa;
 }
 
 /* Recent Activity list */
-
-.table-card ul{
-padding-left:18px;
-margin-top:10px;
+.table-card ul {
+  padding-left: 18px;
+  margin-top: 10px;
 }
 
-.table-card li{
-margin-bottom:8px;
-color:#555;
+.table-card li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* --- الأجزاء الجديدة المضافة لصفحة Organizations --- */
+
+/* أزرار الإجراءات المستوحاة من الصورة */
+.btn-details { 
+  background: #4a90e2; color: white; border: none; 
+  padding: 6px 12px; border-radius: 6px; cursor: pointer; 
+  margin-right: 8px; font-weight: 500;
+}
+
+.btn-approve { 
+  background: #1a5cff; color: white; border: none; 
+  width: 32px; height: 32px; border-radius: 50%; 
+  cursor: pointer; margin-right: 8px; font-weight: bold;
+}
+
+.btn-reject { 
+  background: #ff4d4d; color: white; border: none; 
+  width: 32px; height: 32px; border-radius: 50%; 
+  cursor: pointer; margin-right: 8px; font-weight: bold;
+}
+
+.btn-delete { 
+  background: #e74c3c; color: white; border: none; 
+  padding: 6px 12px; border-radius: 6px; cursor: pointer;
+}
+
+/* حالات المؤسسة */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.pending { background: #fff3cd; color: #856404; }
+.status-badge.approved { background: #d4edda; color: #155724; }
+.status-badge.rejected { background: #f8d7da; color: #721c24; }
+
+/* Modal تفاصيل المؤسسة */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 { margin-bottom: 15px; color: #333; }
+.modal-content p { margin: 10px 0; line-height: 1.6; color: #555; }
+
+.btn-close {
+  background: #3A8D8B; color: white; border: none;
+  padding: 10px 25px; border-radius: 8px; cursor: pointer;
+  margin-top: 20px; width: 100%; font-weight: 600;
 }
